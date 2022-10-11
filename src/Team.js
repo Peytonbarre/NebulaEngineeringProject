@@ -12,7 +12,7 @@ export class Team extends React.Component {
           <ul className="navbar-buttons">
             <button onClick={event => window.location.href='/Game'} className="navbutton">Game</button>
             <button onClick={event => window.location.href='/Code'} className="navbutton">Code</button>
-            <button onClick={event => window.location.href='/Team'} className="navbutton">Team</button>
+            <button className="navbutton">Team</button>
           </ul>
         </div>
           <div className="CardSections">
