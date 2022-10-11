@@ -1,4 +1,5 @@
 import * as React from "react";
+import Navbar from "./Navbar";
 
 import "./Team.css";
 
@@ -7,14 +8,7 @@ export class Team extends React.Component {
   render() {
     return (
       <div>
-        <div className="navbar">
-          <img src="nebula.png" alt="NebulaLogo"  onClick={event => window.location.href='/'}></img>
-          <ul className="navbar-buttons">
-            <button onClick={event => window.location.href='/Game'} className="navbutton">Game</button>
-            <button onClick={event => window.location.href='/Code'} className="navbutton">Code</button>
-            <button onClick={event => window.location.href='/Team'} className="navbutton">Team</button>
-          </ul>
-        </div>
+        <Navbar />
           <div className="CardSections">
             <div className="Card1">
               <a id="atimg1"><div className="teamImg" id="timg1"></div></a>
