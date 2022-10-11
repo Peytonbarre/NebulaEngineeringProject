@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import * as React from "react";
+import { Routes, Route } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { Home } from "./Home";
+import { Game } from "./Game";
+import { Code } from "./Code";
+import { Team } from "./Team";
+// import { Error404 } from "./Error404";
+import "./App.css";
+
+
+/** Main app class which routes to the various pages. */
+export class App extends React.Component {
+  render() {
+    return (
+      <div className="app">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/game" element={<Game />} />
+          <Route path="/code" element={<Code />} />
+          <Route path="/team" element={<Team />} />
+          {/* <Route path="*">
+            <Error404 />
+          </Route> */}
+        </Routes>
+      </div>
+    );
+  }
 }
+
 
 export default App;

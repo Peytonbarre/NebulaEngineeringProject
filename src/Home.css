@@ -1,0 +1,244 @@
+body {
+  background-color: #D9D9D9;
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 0px;
+}
+
+ol,
+ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #CFCFCF;
+  font-family: 'Poppins';
+  overflow: hidden;
+  height: 133px;
+  padding-left: 17%;
+  padding-right: 18%;
+  align-items: center;
+}
+
+.navbar img{
+  height: 57px;
+  padding-bottom: 20px;
+}
+
+.navbar a {
+  color: 575757;
+  font-size: 32;
+  text-align: center;
+}
+
+.navbar-buttons{
+  display: flex;
+  justify-content: space-between;
+  width: 413px;
+}
+
+.navbutton {
+  width: 117px;
+  height: 49px;
+  font-family: 'Poppins';
+  border-radius: 25px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #797979;
+  stroke-width: 20px;
+  background-color: #D9D9D9;
+  border-color: #c4c3c3;
+  border-style: solid;
+  float: right;
+
+}
+
+.navbutton:hover {
+  color: #575757;
+  box-shadow: 1px 3px 0px #0000003a;
+}
+
+.main {
+  padding: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.Blocks {
+  display: flex;
+  width: 450px;
+  height: 158px;
+  border-radius: 25px;
+  filter: drop-shadow(3px 0px 4px #0000002F);
+  background-color: #CFCFCF;
+  border: 1px solid #8B8B8B;
+}
+
+h1, h2, h3 {
+  margin: 0
+}
+
+.Blocks h1{
+  margin-top: 30px;
+  line-height: 60%;
+  font-weight: 400;
+  margin-left: 17px;
+  font-size: 30px;
+  font-family: "Poppins";
+  color: #575757;
+}
+
+.Blocks h2{
+  font-weight: 400;
+  padding-top: 0px;
+  font-size: 24px;
+  font-family: "Poppins";
+  margin-left: 17px;
+  color: #676767;
+  padding-bottom: 4%;
+}
+
+.Blocks h3{
+  font-weight: 400;
+  line-height: 100%;
+  font-size: 20px;
+  font-family: "Poppins";
+  margin-left: 17px;
+  color: #797979
+}
+
+.Bioimg{
+  background-position: 50%;
+  background-size: cover;
+  border: 1px solid #8B8B8B;
+  border-radius: 25px;
+  margin-top: 21px;
+  margin-left: 21px;
+  height: 115px;
+  width: 115px;
+}
+
+#img1{
+  background-image: url('/public/temoc1.jpg');
+}
+
+#img2{
+  background-image: url('/public/temoc2.webp');
+}
+
+#img3{
+  background-image: url('/public/temoc3.jpg');
+}
+
+.paragraph{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  
+  height: 474px;
+}
+
+.paragraph p{
+  margin: 0px;
+  width: 427px;
+  font-size: 48px;
+  font-family: "Poppins";
+  font-weight: 800;
+  color: #404040;
+}
+
+.ParButton{
+  width: 427px;
+  display: flex;
+}
+
+#GameButton{
+  background-color:#9F9F9F;
+  color: #676767;
+  border-radius: 25px;
+  font-size: 30px;
+  font-family: "Poppins";
+  font-weight: 800;
+  border: none;
+  width: 161px;
+  height: 67px;
+}
+
+#GameButton:hover{
+  color: #575757;
+  box-shadow: 1px 3px 0px #0000003a;
+}
+
+#CodeButton{
+  margin-left: 7%;
+  background: none;
+  color: #676767;
+  border-radius: 25px;
+  font-size: 30px;
+  font-family: "Poppins";
+  font-weight: 800;
+  border: none;
+  width: 161px;
+  height: 67px;
+  color: #676767;
+  border-radius: 25px;
+  font-size: 30px;
+  font-family: "Poppins";
+  font-weight: 800;
+  border: none;
+  text-decoration: underline;
+  text-underline-offset: 15%;
+  height: 67px;
+}
+
+#CodeButton:Hover{
+  color: #575757;
+  filter: drop-shadow(1px 1px 0px #0000003a);
+  
+}
