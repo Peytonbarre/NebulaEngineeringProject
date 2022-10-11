@@ -4,6 +4,19 @@ body {
   margin: 0px;
 }
 
+.EverythingElse{
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
 ol,
 ul {
   padding-left: 30px;

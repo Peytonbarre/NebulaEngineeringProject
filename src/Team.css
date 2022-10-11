@@ -5,7 +5,13 @@
     margin-right: 15%;
     padding-top: 50px;
     padding-bottom: 50px;
+    animation: fadeIn 1s;
 }
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 
 .Card1{
     padding-top: 50px;
@@ -42,6 +48,8 @@
     width: 200px;
     background-position: 50%;
     background-size: cover;
+    outline: 6px double #575757;
+    outline-offset: 2px;
 }
 
 #timg1{
