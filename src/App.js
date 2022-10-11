@@ -1,5 +1,6 @@
 import * as React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 import { Home } from "./Home";
 import { Game } from "./Game";
@@ -14,15 +15,15 @@ export class App extends React.Component {
   render() {
     return (
       <div className="app">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/game" element={<Game />} />
-          <Route path="/code" element={<Code />} />
-          <Route path="/team" element={<Team />} />
-          {/* <Route path="*">
-            <Error404 />
-          </Route> */}
-        </Routes>
+          <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/game" element={<Game />} />
+              <Route path="/code" element={<Code />} />
+              <Route path="/team" element={<Team />} />
+                {/* <Route path="*">
+                  <Error404 />
+                </Route> */}
+          </Routes>
       </div>
     );
   }

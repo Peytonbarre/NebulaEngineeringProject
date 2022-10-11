@@ -4,15 +4,19 @@ import "./Home.css";
 
 
 export class Home extends React.Component {
+
+  
+
+
   render() {
     return (
-      <div>
+      <div class="HomePage">
         <div className="navbar">
           <img src="nebula.png" alt="NebulaLogo"></img>
           <ul className="navbar-buttons">
             <button onClick={event => window.location.href='/Game'} className="navbutton">Game</button>
-            <button onClick={event => window.location.href='/Game'} className="navbutton">Code</button>
-            <button onClick={event => window.location.href='/Game'} className="navbutton">Team</button>
+            <button onClick={event => window.location.href='/Code'} className="navbutton">Code</button>
+            <button onClick={event => window.location.href='/Team'} className="navbutton">Team</button>
           </ul>
 
         </div>
@@ -36,8 +40,8 @@ export class Home extends React.Component {
             will shrink. Also when onlick, go to next page
           */}
           <div className="right">
-            <div className="Blocks">
-                <div className="Bioimg" id="img1"></div>
+            <div className="Blocks" id="Blocks1" onClick={event => window.location.href='/Team'}>
+                <a href="#atimg1"><div className="Bioimg" id="img1"></div></a>
                 <div claaName="Biotext">
                     <h1>Temoc</h1>
                     <h2>Project Lead</h2>
@@ -45,8 +49,8 @@ export class Home extends React.Component {
                     <h3>812-432-4635</h3>
                 </div>
             </div>
-            <div className="Blocks">
-                <div className="Bioimg" id="img2"></div>
+            <div className="Blocks" id="Blocks2" onClick={event => window.location.href='/Team'}>
+                <a href="#atimg2"><div className="Bioimg" id="img2"></div></a>
                 <div claaName="Biotext">
                     <h1>Teemoc</h1>
                     <h2>Poor</h2>
@@ -54,8 +58,8 @@ export class Home extends React.Component {
                     <h3>812-432-4635</h3>
                 </div>
             </div>
-            <div className="Blocks">
-                <div className="Bioimg" id="img3"></div>
+            <div className="Blocks" id="Blocks3" onClick={event => window.location.href='/Team'}>
+                <a href="#atimg3"><div className="Bioimg" id="img3"></div></a>
                 <div claaName="Biotext">
                     <h1>HUBUBUB</h1>
                     <h2>Project Lead</h2>

@@ -108,7 +108,12 @@ ul {
   align-items: center;
 }
 
-
+.right{
+  display: flex;
+  flex-direction: column;
+  height: 550px;
+  justify-content: space-around;
+}
 .Blocks {
   display: flex;
   width: 450px;
@@ -117,7 +122,36 @@ ul {
   filter: drop-shadow(3px 0px 4px #0000002F);
   background-color: #CFCFCF;
   border: 1px solid #8B8B8B;
+  animation: blocks-decrese 0.5s forwards ease;
 }
+
+
+.Blocks:hover{
+  animation: block-expand 0.5s forwards ease;
+}
+
+#Blocks1:hover #Blocks2 #Blocks3{
+  background-color: red;
+}
+
+@keyframes blocks-decrese{
+  0%{
+    transform: scale(120%);
+  }
+  100%{
+    transform: scale(100%);
+  }
+}
+
+@keyframes block-expand {
+  0%{
+    transform:scale(100%);
+  }
+  100%{
+    transform: scale(120%);
+  }
+}
+
 
 h1, h2, h3 {
   margin: 0
