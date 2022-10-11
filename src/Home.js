@@ -10,9 +10,9 @@ export class Home extends React.Component {
         <div className="navbar">
           <img src="nebula.png" alt="NebulaLogo"></img>
           <ul className="navbar-buttons">
-            <button className="navbutton">Game</button>
-            <button className="navbutton">Code</button>
-            <button className="navbutton">Team</button>
+            <button onClick={event => window.location.href='/Game'} className="navbutton">Game</button>
+            <button onClick={event => window.location.href='/Game'} className="navbutton">Code</button>
+            <button onClick={event => window.location.href='/Game'} className="navbutton">Team</button>
           </ul>
 
         </div>
@@ -22,14 +22,19 @@ export class Home extends React.Component {
             <div className="paragraph">
                 <p> A Passion Project Like No Other </p>
                 <div className="ParButton">
-                  <button id="GameButton" href="/" type="button">Game</button>
-                  <button id="CodeButton" href="/" type="button">Code</button>
+                  <button onClick={event => window.location.href='/Game'} id="GameButton">Game</button>
+                  <button onClick={event => window.location.href='/Code'} id="CodeButton">Code</button>
                 </div>
             </div>
           </div>
           
           
-          
+          {/*
+            TODO:
+            Create on-hover events for each of the icons. These on-hover events will
+            trigger an animation that'll make the hovered object the layer on top and the other 2
+            will shrink. Also when onlick, go to next page
+          */}
           <div className="right">
             <div className="Blocks">
                 <div className="Bioimg" id="img1"></div>
