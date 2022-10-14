@@ -1,38 +1,32 @@
 import * as React from "react";
+import { Link } from "react-router-dom";
+import { Navbar } from "./Navbar";
 
 import "./Home.css";
 
 
 export class Home extends React.Component {
 
-  
+
 
 
   render() {
     return (
-      <div class="HomePage">
-        <div className="navbar">
-          <img src="nebula.png" alt="NebulaLogo"></img>
-          <ul className="navbar-buttons">
-            <button onClick={event => window.location.href='/Game'} className="navbutton">Game</button>
-            <button onClick={event => window.location.href='/Code'} className="navbutton">Code</button>
-            <button onClick={event => window.location.href='/Team'} className="navbutton">Team</button>
-          </ul>
-
-        </div>
+      <div className="HomePage">
+        <Navbar />
         <div className="EverythingElse">
           <div className="main">
             <div className="left">
               <div className="paragraph">
                   <p> A Passion Project Like No Other </p>
                   <div className="ParButton">
-                    <button onClick={event => window.location.href='/Game'} id="GameButton">Game</button>
-                    <button onClick={event => window.location.href='/Code'} id="CodeButton">Code</button>
+                    <Link to='/game' id="GameButton">Game</Link>
+                    <Link to='/code' id="CodeButton">Code</Link>
                   </div>
               </div>
             </div>
-            
-            
+
+
             {/*
               TODO:
               Create on-hover events for each of the icons. These on-hover events will
@@ -60,7 +54,7 @@ export class Home extends React.Component {
               </div>
               <div className="Blocks" id="Blocks3" onClick={event => window.location.href='/Team'}>
                   <a href="#atimg3"><div className="Bioimg" id="img3"></div></a>
-                  <div claaName="Biotext">
+                  <div className="Biotext">
                       <h1>HUBUBUB</h1>
                       <h2>Project Lead</h2>
                       <h3>temoc@utdallas.edu</h3>
