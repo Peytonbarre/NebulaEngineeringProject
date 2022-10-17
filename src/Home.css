@@ -69,6 +69,7 @@ ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .right{
@@ -85,12 +86,12 @@ ul {
   filter: drop-shadow(3px 0px 4px #0000002F);
   background-color: #CFCFCF;
   border: 1px solid #8B8B8B;
-  animation: blocks-decrese 0.5s forwards ease;
+  animation: blocks-decrese 0.25s forwards ease;
 }
 
 
 .Blocks:hover{
-  animation: block-expand 0.5s forwards ease;
+  animation: block-expand 0.25s forwards ease;
 }
 
 #Blocks1:hover #Blocks2 #Blocks3{

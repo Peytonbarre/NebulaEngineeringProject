@@ -1,0 +1,20 @@
+pre{
+    background: #eee;
+    border-radius: 3px;
+    max-width: 70ch;
+    height: 300px;
+    margin-left: 17%;
+    margin-top: 10%;
+    overflow:scroll;
+    overflow-x:hidden;
+}
+
+pre code {
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+
+}
