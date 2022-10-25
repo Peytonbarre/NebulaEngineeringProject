@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import nebulaLogo from "./nebula.png";
 
 import "./Navbar.css";
+
 export class Navbar extends React.Component {
   render() {
     return (
@@ -13,7 +14,6 @@ export class Navbar extends React.Component {
           <Link to='/code' className="navbutton">Code</Link>
           <Link to='/team' className="navbutton">Team</Link>
         </ul>
-
       </div>
     )
   }
