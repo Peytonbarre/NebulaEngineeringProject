@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/NebulaEngineeringProject/static/css/main.dc03ab95.css",
-    "main.js": "/NebulaEngineeringProject/static/js/main.acf9ec98.js",
+    "main.css": "/NebulaEngineeringProject/static/css/main.5eca89f5.css",
+    "main.js": "/NebulaEngineeringProject/static/js/main.3a438f78.js",
     "static/media/temoc3.jpg": "/NebulaEngineeringProject/static/media/temoc3.57cafb5d6d1e4f080ad2.jpg",
     "static/media/temoc1.jpg": "/NebulaEngineeringProject/static/media/temoc1.837545a5e6d4be575389.jpg",
     "static/media/temoc2.webp": "/NebulaEngineeringProject/static/media/temoc2.b34f50c6e68a835d985f.webp",
     "index.html": "/NebulaEngineeringProject/index.html",
-    "main.dc03ab95.css.map": "/NebulaEngineeringProject/static/css/main.dc03ab95.css.map",
-    "main.acf9ec98.js.map": "/NebulaEngineeringProject/static/js/main.acf9ec98.js.map"
+    "main.5eca89f5.css.map": "/NebulaEngineeringProject/static/css/main.5eca89f5.css.map",
+    "main.3a438f78.js.map": "/NebulaEngineeringProject/static/js/main.3a438f78.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc03ab95.css",
-    "static/js/main.acf9ec98.js"
+    "static/css/main.5eca89f5.css",
+    "static/js/main.3a438f78.js"
   ]
 }
