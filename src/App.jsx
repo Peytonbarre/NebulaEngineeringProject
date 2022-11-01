@@ -10,20 +10,18 @@ import Team from "./Team";
 import "./App.css";
 
 
-export class App extends React.Component {
-  render() {
-    return (
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route exact path='/' element={<Home />} />
-          <Route path="/game" element={<Game />} />
-          <Route path="/code" element={<Code />} />
-          <Route path="/team" element={<Team />} />
-        </Routes>
-      </Router>
-    );
-  }
+export function App() {
+  return (
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route exact path='' element={<Home />} />
+        <Route path="/game" element={<Game />} />
+        <Route path="/code" element={<Code />} />
+        <Route path="/team" element={<Team />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;

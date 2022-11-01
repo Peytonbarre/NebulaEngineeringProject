@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Game.css";
 
 export class Game extends React.Component {
@@ -14,6 +14,23 @@ export class Game extends React.Component {
 		};
 		this.addNum(this.state.data);
 		this.addNum(this.state.data);
+		const keyDownHandler = event => {
+			console.log('user pressed ' + event.key);
+			if(event.key === 'arrow left'){
+				event.preventDefault();
+				this.left();
+			}else if(event.key === 'arrow right'){
+				event.preventDefault();
+				this.right();
+			}else if(event.key === 'arrow up'){
+				event.preventDefault();
+				this.up();
+			}else if(event.key === 'arrow down'){
+				event.preventDefault();
+				this.down();
+			}
+		};
+		document.addEventListener('keydown', keyDownHandler);
 	}
 
 	addNum(newGrid) {
@@ -197,7 +214,6 @@ export class Game extends React.Component {
 		// 	console.log("reached!");
 		// 	return notOld;
 		// }else{
-		console.log("boobs!");
 		this.setState({ data: notOld });
 		// }
 	}
