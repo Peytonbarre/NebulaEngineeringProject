@@ -1,0 +1,78 @@
+.todo-frame{
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-form{
+    display: flex;
+}
+
+.Submit-button{
+    margin-left: 10%;
+    background: none;
+    color: #676767;
+    border-radius: 25px;
+    font-size: 30px;
+    font-family: "Poppins";
+    font-weight: 800;
+    border: none;
+    width: 161px;
+    height: 67px;
+    color: #676767;
+    border-radius: 25px;
+    font-size: 30px;
+    font-family: "Poppins";
+    font-weight: 800;
+    border: none;
+    text-decoration: underline;
+    text-underline-offset: 15%;
+    height: 67px;
+    line-height: 67px;
+    cursor: pointer;
+}
+
+.the-button{
+    background-color: #9F9F9F;
+    color: #676767;
+    border-radius: 25px;
+    font-size: 30px;
+    font-family: "Poppins";
+    font-weight: 800;
+    border: none;
+    width: 500px;
+    height: 67px;
+    text-decoration: none;
+    align-items: center;
+    line-height: 67px;
+    text-align: center;  
+}
+
+.item-container{
+    display: flex;
+    padding-top: 15px;
+    justify-content: space-between;
+}
+
+.list-group{
+    width: 550px;
+    list-style: none;
+}
+
+.item-container span{
+    font-size: 20px;
+    color: #676767;
+    font-weight: 500;
+    font-family: "Poppins";
+}
+
+.item-container button{
+    background-color: #D9D9D9;
+    border: 0px;
+    text-decoration: underline;
+    font-size: 20px;
+    color: #676767;
+    font-weight: 500;
+    font-family: "Poppins";
+}
